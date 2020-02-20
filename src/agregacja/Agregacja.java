@@ -7,10 +7,10 @@ public class Agregacja {
 
 
         System.out.println();
-        //użycie finally w obsłudze wyjątków
+        //użycie 'finally' w obsłudze wyjątków
         try {
             System.out.println(5 / 0);
-        } catch (ArithmeticException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
             System.out.println(5 / 1);
@@ -26,6 +26,7 @@ class Pracownik {
         this.imie = imie;
         this.adres = adres;
     }
+    class NaszWyjatek
 
     @Override
     public String toString() {
@@ -52,5 +53,11 @@ class Adres {
                 "ulica='" + ulica + '\'' +
                 ", nrDomu=" + nrDomu +
                 '}';
+    }
+}
+
+class NaszWyjatek extends Exception {
+    public NaszWyjatek(String string) {
+        super((string));
     }
 }
