@@ -15,6 +15,16 @@ public class Agregacja {
         } finally {
             System.out.println(5 / 1);
         }
+
+        System.out.println();
+        int a = 10;
+        try {
+
+            if (a == 10)
+                throw new NaszWyjatek("a jet równe 10 blabla");
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }
 
@@ -26,7 +36,6 @@ class Pracownik {
         this.imie = imie;
         this.adres = adres;
     }
-    class NaszWyjatek
 
     @Override
     public String toString() {
