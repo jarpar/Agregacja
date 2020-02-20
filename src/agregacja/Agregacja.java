@@ -6,8 +6,7 @@ public class Agregacja {
         System.out.println(p);
 
 
-        System.out.println();
-        //użycie 'finally' w obsłudze wyjątków
+        System.out.println("obsługa wyjątków:");
         try {
             System.out.println(5 / 0);
         } catch (Exception e) {
