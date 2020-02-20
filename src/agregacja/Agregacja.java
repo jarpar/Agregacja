@@ -34,4 +34,12 @@ class Adres {
     }
 
     int nrDomu;
+
+    @Override
+    public String toString() {
+        return "Adres{" +
+                "ulica='" + ulica + '\'' +
+                ", nrDomu=" + nrDomu +
+                '}';
+    }
 }
