@@ -4,7 +4,7 @@ public class Agregacja {
     public static void main(String[] args) {
         Pracownik p = new Pracownik("Andrzej", new Adres("Szkolna", 1));
         System.out.println(p);
-
+        System.out.println();
 
         System.out.println("obsługa wyjątków:");
         try {
@@ -26,4 +26,3 @@ public class Agregacja {
         }
     }
 }
-
